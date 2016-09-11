@@ -1,5 +1,5 @@
-mysqlpassword=pass
-icingaadminpassword=pass
+mysqlpassword=password
+icingaadminpassword=password
 echo mysql-server-5.5        mysql-server/root_password      password  $mysqlpassword | sudo debconf-set-selections -v 
 echo mysql-server-5.5        mysql-server/root_password_again        password  $mysqlpassword | sudo debconf-set-selections -v 
 echo mysql-server-5.5        mysql-server/error_setting_password     error | sudo debconf-set-selections -v 

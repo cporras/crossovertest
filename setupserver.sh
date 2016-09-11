@@ -3,9 +3,10 @@
 #The default mysql and icingaadmin passwords are 'password'. To use other values edit setdebconfselections.sh
 
 #Icinga install and config
+sudo apt-get update
 sudo apt-get install -y debconf-utils
-sudo add-apt-repository ppa:formorer/icinga
-sudo apt update
+sudo add-apt-repository -y ppa:formorer/icinga
+sudo apt-get update
 chmod a+x $(pwd)/setdebconfselections.sh
 sh $(pwd)/setdebconfselections.sh
 sudo DEBIAN_FRONTEND="noninteractive" apt install -y icinga icinga-doc icinga-idoutils mysql-server libdbd-mysql mysql-client
