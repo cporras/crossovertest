@@ -12,4 +12,4 @@ Instructions:
 
 	* Run 'aws configure' to setup your AWS credentials for the S3 bucket where the logs are going to be stored
 
-	* Rdit ~/scripts/logbackup.sh with the name of your S3 bucket"
+	* Edit ~/scripts/logbackup.sh with the name of your S3 bucket
